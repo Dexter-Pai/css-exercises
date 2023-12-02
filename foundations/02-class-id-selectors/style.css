@@ -1,0 +1,19 @@
+.c {
+    background-color: pink;
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+#one {
+    color: blue;
+    font-size: 36px;
+}
+
+.c.third {
+    font-size: 24px;
+}
+
+#two {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
