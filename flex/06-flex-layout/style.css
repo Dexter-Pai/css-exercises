@@ -5,6 +5,13 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  padding: 0;
 }
 
 img {
@@ -24,4 +31,50 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* my solution */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > * {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > img {
+  flex-shrink: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > * {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
 }
