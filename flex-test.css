@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 50%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    margin: auto;
+    flex-wrap:wrap;
+}
+
+.parent > * {
+    background-color: papayawhip;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.name, .email {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.name {
+    flex:2 2 230px;
+}
+
+.email {
+    flex: 3 2 340px;
+}
+
+.button {
+    width: 30px;
+    flex: 1 1 150px;
+    
+}
+
+/* some button design i found on google :) */
+.button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
