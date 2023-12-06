@@ -10,6 +10,30 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.child > .image {
+  display: block;
+  margin: auto;
+  flex-shrink: 0;
+}
+
+.child > .text {
+  text-align: center;
+  flex: 1;
 }
 
 /* do not edit this footer */
@@ -23,4 +47,14 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+@media screen and (max-width: 470px) {
+
+  .parent {
+    flex-wrap: wrap;
+  }
+  .child {
+    flex-basis: 40%;
+  }  
 }

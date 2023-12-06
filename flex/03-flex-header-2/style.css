@@ -10,8 +10,13 @@ body {
 
 .header {
   background: white;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display:flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .profile-image {
@@ -27,6 +32,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  align-self: center;
 }
 
 button {
@@ -45,4 +51,15 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.left, .right {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-image {
+  flex-shrink: 0;
 }
