@@ -18,7 +18,6 @@ html {
   gap: 15px;
   grid-template-columns: calc(100vw / 4 - 16px) calc(100vw /4 *3 - 30px);
   grid-template-rows: var(--row-small) var(--row-small) var(--row-calc) var(--row-small);
-  /* grid-template-columns: 300px 900px; */
   grid-template-areas: 
   'header header'
   'sidebar nav'
