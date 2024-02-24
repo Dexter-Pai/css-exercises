@@ -1,10 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .container {
   text-align: center;
+  display: grid;
+  gap: 5px;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 2fr 7fr;
+  grid-template-rows: 2fr 1fr 15fr 1fr;
+  grid-template-areas: 
+  'header header'
+  'sidebar nav'
+  'sidebar article'
+  'footer footer';
 }
 
 .container div {
@@ -17,6 +29,20 @@
 
 .header {
   background-color: #393f4d;
+  grid-area: header;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.logo {
+  text-align: left;
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .menu ul,
@@ -24,8 +50,19 @@
   font-size: 16px;
 }
 
+.menu ul {
+  grid-row: 2 ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 100%;
+}
+
 .sidebar {
   background-color: #C50208;
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 40px 0;
 }
 
 .sidebar .photo {
@@ -46,6 +83,13 @@
 
 .nav {
   background-color: #C50208;
+  grid-area: nav;
+  overflow-y: hidden;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .nav ul li {
@@ -55,6 +99,13 @@
 
 .article {
   background-color: #bccbde;
+  display: grid;
+  grid-area: article;
+  overflow-y: scroll;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
 }
 
 .article p {
@@ -83,6 +134,7 @@
 
 .footer {
   background-color: #393f4d;
+  grid-area: footer;
 }
 
 .footer p {
